@@ -1,4 +1,4 @@
-
 fn main() {
-    qeng::start_engine();
+    env_logger::init();
+    pollster::block_on(qeng::start_engine());
 }
